@@ -20,43 +20,45 @@ import { RouterLink } from "vue-router";
   </header>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 header {
   background-color: var(--color-light);
-}
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1080px;
-  max-height: 70px;
-  margin: 0 auto;
-}
-.menu--logo {
-  width: 50px;
-}
 
-nav {
-  font-size: 1rem;
-  text-align: center;
-}
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1080px;
+    max-height: 70px;
+    margin: 0 auto;
 
-nav a.router-link-exact-active {
-  color: var(--color-green-vue);
-}
+    &--logo {
+      width: 50px;
+    }
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
+    nav {
+      font-size: 1rem;
+      text-align: center;
 
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-gray);
-}
+      a {
+        display: inline-block;
+        padding: 0 1rem;
+        border-left: 1px solid var(--color-gray);
 
-nav a:first-of-type {
-  border: 0;
+        &:first-of-type {
+          border: 0;
+        }
+
+        &.router-link-exact-active {
+          color: var(--color-green-vue);
+
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
 }
 </style>
