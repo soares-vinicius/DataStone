@@ -1,5 +1,7 @@
+<script setup lang="ts">
+import TheTitle from "../components/TheTitle.vue";
+</script>
+
 <template>
-  <main>
-    <h1>Home</h1>
-  </main>
+  <main><TheTitle text="Home" /></main>
 </template>
